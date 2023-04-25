@@ -48,6 +48,5 @@ const init = function () {
   setInterval(getTime, 1000);
   printStat();
   clearBalance();
-  console.log("Salam Aleykum");
 };
 init();
