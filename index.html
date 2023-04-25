@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/controller.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navigation flex">
+      <img
+        src="barber-shop-small.png"
+        alt="Barber-shop logo"
+        class="navigation__logo"
+      />
+      <div class="navigation__text">
+        <p class="navigation__welcome">Welcome,Suleyman</p>
+        <p class="navigation__date">
+          <span class="date"></span>
+          <span class="time"></span>
+        </p>
+      </div>
+    </nav>
+    <main>
+      <div class="container grid">
+        <!-- BALANCE -->
+        <div class="balance flex">
+          <p class="balance__label">Current balance</p>
+          <p class="balance__value">75000 TMT</p>
+        </div>
+
+        <!-- STATISTICS -->
+        <ul class="statistics__list">
+          <!-- <li class="statistics__element flex">
+            <div class="date flex">
+              <p class="statistics_name">Dayanc</p>
+              <p class="statistics__time">15:00</p>
+            </div>
+            <p class="statistics__value">30 TMT</p>
+          </li>
+
+          <li class="statistics__element flex">
+            <div class="date flex">
+              <p class="statistics__name">Suleyman</p>
+              <p class="statistics__time">16:00</p>
+            </div>
+            <p class="statistics__value">30 TMT</p>
+          </li> -->
+        </ul>
+
+        <!-- ADD A MONEY -->
+        <div class="operation">
+          <form class="operation__form grid">
+            <input type="text" class="operation__input input--name" />
+            <input type="number" class="operation__input input--value" />
+            <button class="operation__btn--submit">Add</button>
+            <label class="operation__label">Barber</label>
+            <label class="operation__label">Amount</label>
+          </form>
+        </div>
+        <button class="btn__clear">Hasaby arassala</button>
+      </div>
+    </main>
+  </body>
+</html>

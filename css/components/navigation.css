@@ -1,0 +1,16 @@
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 40px;
+}
+
+.navigation__welcome {
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.navigation__date {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #888;
+}

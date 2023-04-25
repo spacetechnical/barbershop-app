@@ -1,0 +1,70 @@
+.operation {
+  grid-row: 2 / span 3;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(49, 173, 35, 0.5);
+}
+.operation__form {
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 5px 16px;
+}
+
+.operation__input {
+  width: 100px;
+  padding: 3px 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+}
+
+.operation__input:focus {
+  outline: none;
+}
+
+.operation__label {
+  font-size: 13px;
+  color: #333;
+}
+
+.operation__btn--submit {
+  border: none;
+  background-color: #fff;
+  color: rgba(49, 173, 1, 1);
+  border-radius: 7px;
+  font-size: 13px;
+  font-family: "Rubik";
+  cursor: pointer;
+}
+
+.operation__btn--submit:focus {
+  outline: none;
+}
+
+.operation__btn--submit:hover {
+  background-color: rgba(49, 173, 1, 1);
+  color: #fff;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.btn__clear {
+  grid-column: 2;
+  padding: 10px 1px 15px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: rgba(41, 71, 179, 0.4);
+  color: rgba(6, 6, 138, 1);
+  cursor: pointer;
+}
+
+.btn__clear:hover {
+  background-color: rgba(6, 6, 138, 0.5);
+  color: #fff;
+  transition: 0.7s;
+  cursor: pointer;
+}

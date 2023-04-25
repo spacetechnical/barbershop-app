@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1040px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 300px;
+    }
+
+    .balance__value {
+      font-size: 30px;
+    }
+  }
+}
