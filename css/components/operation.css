@@ -10,6 +10,34 @@
   gap: 5px 16px;
 }
 
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: 0;
+  border: 0 !important;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select option {
+  background: rgba(49, 173, 35, 0.4);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+.selected {
+  display: none;
+}
+
 .operation__input {
   width: 100px;
   padding: 3px 10px;
@@ -19,10 +47,6 @@
   text-align: center;
   border: none;
   border-radius: 3px;
-}
-
-.operation__input:focus {
-  outline: none;
 }
 
 .operation__label {

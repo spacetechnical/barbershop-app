@@ -7,11 +7,8 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 
 const startConfig = function () {
-  config.inputName.focus();
-  config.inputValue.value =
-    config.inputName.value =
-    config.balanceValue.textContent =
-      "";
+  config.inputValue.value = config.balanceValue.textContent = "";
+  config.selectBox.selectedIndex = 0;
 };
 
 //DISPLAY TIME
@@ -27,7 +24,8 @@ const printStat = function () {
   config.operationBtn.addEventListener("click", function (e) {
     e.preventDefault();
     config.statList.insertAdjacentHTML("afterbegin", help.addingStat());
-    config.inputName.value = config.inputValue.value = "";
+    config.inputValue.value = "";
+    config.selectBox.selectedIndex = 0;
 
     //Print a current balance
     config.balanceValue.textContent = `${help.displaySummary()} TMT`;
@@ -39,6 +37,7 @@ const clearBalance = function () {
   config.clearBtn.addEventListener("click", function (e) {
     e.preventDefault;
     help.clearButton();
+    startConfig();
   });
 };
 
