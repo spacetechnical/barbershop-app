@@ -9,6 +9,3 @@ export const selectBox = document.getElementById("barber");
 //BUTTONS
 export const operationBtn = document.querySelector(".operation__btn--submit");
 export const clearBtn = document.querySelector(".btn__clear");
-
-//Tex of selected option
-export const selected = selectBox.options[selectBox.selectedIndex].text;
