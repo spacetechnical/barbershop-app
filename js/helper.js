@@ -40,3 +40,20 @@ export const clearButton = function () {
   config.statList.innerHTML = "";
   config.balanceValue.textContent = "";
 };
+
+export const saveAll = function () {
+  const toStorage = [];
+
+  const values = document.querySelectorAll("ul");
+  for (let i = 0; i < values.length; i++) {
+    toStorage.push(values[i].innerHTML);
+  }
+
+  localStorage.setItem("items", JSON.stringify(toStorage));
+};
+
+export const loadAll = function () {
+  const storedValue = JSON.parse(localStorage.getItem("items"));
+  console.log(storedValue);
+  config.statList.innerHTML = storedValue;
+};

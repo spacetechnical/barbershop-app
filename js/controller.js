@@ -28,7 +28,9 @@ const printStat = function () {
     config.selectBox.selectedIndex = 0;
 
     //Print a current balance
-    config.balanceValue.textContent = `${help.displaySummary()} TMT`;
+    config.balanceValue.textContent = `${help.displaySummary()} 
+    TMT`;
+    help.saveAll();
   });
 };
 
@@ -43,9 +45,22 @@ const clearBalance = function () {
 
 //INIT FUNCTIONS
 const init = function () {
+  help.loadAll();
   startConfig();
   setInterval(getTime, 1000);
   printStat();
   clearBalance();
 };
 init();
+
+//Adding to local storage
+// function saveAll() {
+//   const toStorage = [];
+
+//   const values = document.querySelectorAll("li");
+//   for (let i = 0; i < values.length; i++) {
+//     toStorage.push(values[i].innerHTML);
+//   }
+
+//   console.log(toStorage);
+// }
