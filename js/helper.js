@@ -27,8 +27,8 @@ export const addingStat = function () {
 };
 
 //Display current summary
-export const displaySummary = function () {
-  const sum = balance.reduce(function (acc, curr) {
+export const displaySummary = function (value) {
+  const sum = value.reduce(function (acc, curr) {
     return acc + curr;
   }, 0);
   return sum;
@@ -39,6 +39,7 @@ export const clearButton = function () {
   balance = [];
   config.statList.innerHTML = "";
   config.balanceValue.textContent = "";
+  localStorage.clear();
 };
 
 export const saveAll = function () {
@@ -50,10 +51,16 @@ export const saveAll = function () {
   }
 
   localStorage.setItem("items", JSON.stringify(toStorage));
+  localStorage.setItem("balance", JSON.stringify(balance));
 };
 
 export const loadAll = function () {
   const storedValue = JSON.parse(localStorage.getItem("items"));
-  console.log(storedValue);
   config.statList.innerHTML = storedValue;
+  const NewBalance = JSON.parse(localStorage.getItem("balance"));
+  if (NewBalance !== null) balance = [...NewBalance];
+  else return;
+  if (balance !== null)
+    config.balanceValue.textContent = `${displaySummary(balance)} TMT`;
+  else return;
 };
