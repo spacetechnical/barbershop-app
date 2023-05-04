@@ -6,7 +6,7 @@
 @import "components/04_balance.css";
 @import "components/05_operation.css";
 @import "components/06_statistics.css";
-@import "components/07_authorization.css";
+@import "components/07_zauthorization.css";
 
 /* QUERY */
-@import "08_query.css";
+@import "components/08_query.css";

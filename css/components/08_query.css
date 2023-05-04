@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1200px) {
   .content {
     display: flex;
-    padding: 100px 0 !important;
+    padding: 100px 0;
   }
 
   .row {
@@ -11,7 +11,7 @@
   }
   .img__content,
   .form__content {
-    max-width: 100% !important;
+    max-width: 100%;
   }
 
   .img__content {
