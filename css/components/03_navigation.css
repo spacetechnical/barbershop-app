@@ -2,6 +2,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 40px;
+  display: none;
 }
 
 .navigation__welcome {

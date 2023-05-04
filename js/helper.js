@@ -1,5 +1,11 @@
 import * as config from "./config.js";
 
+//Data of admin
+export const admin = {
+  name: "Suleyman",
+  password: 12345678910,
+};
+
 //Array of balance
 export let balance = [];
 
@@ -63,4 +69,20 @@ export const loadAll = function () {
   if (balance !== null)
     config.balanceValue.textContent = `${displaySummary(balance)} TMT`;
   else return;
+};
+
+//Enter to system
+export const enterSystem = function () {
+  config.enterBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (
+      config.nameInit.value === admin.name &&
+      Number(config.passwdInit.value) === admin.password
+    ) {
+      config.verification.style.display = "none";
+      config.navigation.style.display = "flex";
+      config.main.style.display = "block";
+      config.nameInit.value = "";
+    } else return;
+  });
 };

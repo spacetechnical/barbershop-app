@@ -37,6 +37,8 @@ const clearBalance = function () {
 
 //INIT FUNCTIONS
 const init = function () {
+  config.nameInit.focus();
+  help.enterSystem();
   help.loadAll();
   setInterval(getTime, 1000);
   printStat();

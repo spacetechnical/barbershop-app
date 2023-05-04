@@ -1,11 +1,12 @@
-@import "global.css";
-@import "overall.css";
+@import "01_global.css";
+@import "02_overall.css";
 
 /* COMPONENTS */
-@import "components/navigation.css";
-@import "components/balance.css";
-@import "components/operation.css";
-@import "components/statistics.css";
+@import "components/03_navigation.css";
+@import "components/04_balance.css";
+@import "components/05_operation.css";
+@import "components/06_statistics.css";
+@import "components/07_authorization.css";
 
 /* QUERY */
-@import "query.css";
+@import "08_query.css";
